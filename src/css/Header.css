@@ -80,9 +80,14 @@
     font-weight: 600;
 }
 
-.header_fifth > i {
+.header_fifth i {
     color: white;
     padding-left: 5px;
+}
+
+.header_fifth .tippy-content,
+.header_third .tippy-content {
+    padding: 5px 0px;
 }
 
 .header_sixth {

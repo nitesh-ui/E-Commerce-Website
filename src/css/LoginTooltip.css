@@ -1,0 +1,29 @@
+.logintooltip_in {
+    display: flex;
+    align-items: center;
+    padding: 12px 8px;
+    width: 13.5rem;
+}
+
+.logintooltip_in.signup {
+    justify-content: space-between;
+}
+
+.logintooltip_in i {
+    color: #2874f0;
+}
+
+.logintooltip_in > h5 {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.logintooltip_in > p {
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+hr {
+    margin: 2px 0;
+}

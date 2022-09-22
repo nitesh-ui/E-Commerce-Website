@@ -1,0 +1,18 @@
+.moretooltip_in {
+    display: flex;
+    padding: 12px 8px;
+}
+
+.moretooltip_in i {
+    color: #2874f0;
+}
+
+.moretooltip_in > p {
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+hr {
+    margin: 2px 0;
+}
