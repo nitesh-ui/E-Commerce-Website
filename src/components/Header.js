@@ -52,7 +52,12 @@ const Header = () => {
                 </Tippy>
             </div>
             <div className='header_sixth'>
-                <i className="bi bi-cart-fill"></i>
+                <i className="bi bi-cart-fill position-relative">
+                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
+                        1
+                        <span className="visually-hidden">unread messages</span>
+                    </span>
+                </i>
                 <p>Cart</p>
             </div>
         </div>
