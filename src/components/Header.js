@@ -1,5 +1,12 @@
 import React from 'react';
 import '../css/Header.css';
+import Tippy from '@tippyjs/react';
+import "tippy.js/dist/tippy.css";
+import "tippy.js/themes/light.css";
+import "tippy.js/animations/perspective.css";
+import "tippy.js/animations/scale.css";
+import MoreTooltip from './MoreTooltip';
+import LoginTooltip from './LoginTooltip';
 
 const Header = () => {
     return (
@@ -16,20 +23,36 @@ const Header = () => {
             </div>
             <div className='header_second'>
                 <input placeholder="Search for products..." type="text" />
-                <i class="bi bi-search"></i>
+                <i className="bi bi-search"></i>
             </div>
             <div className='header_third'>
-                <button>Login</button>
+                <Tippy
+                    content={<LoginTooltip></LoginTooltip>}
+                    interactive={true}
+                    theme="light"
+                    offset={[5, 0]}
+                    placement="bottom"
+                >
+                    <button>Login</button>
+                </Tippy>
             </div>
             <div className='header_fourth'>
                 <p>Become a Seller</p>
             </div>
             <div className='header_fifth'>
-                <span>More</span>
-                <i class="bi bi-caret-down-fill"></i>
+                <Tippy
+                    content={<MoreTooltip></MoreTooltip>}
+                    interactive={true}
+                    theme="light"
+                    offset={[5, 0]}
+                >
+                    <span className="tp">More
+                        <i className="bi bi-caret-down-fill"></i>
+                    </span>
+                </Tippy>
             </div>
             <div className='header_sixth'>
-                <i class="bi bi-cart-fill"></i>
+                <i className="bi bi-cart-fill"></i>
                 <p>Cart</p>
             </div>
         </div>
