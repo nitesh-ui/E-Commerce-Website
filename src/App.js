@@ -2,6 +2,7 @@ import './App.css';
 import { commerce } from './lib/commerce';
 import Header from "./components/Header";
 import Products from "./components/Products";
+import Cart from './components/Cart';
 import { useEffect, useState } from 'react';
 
 const App = () => {
@@ -33,8 +34,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header totalItem={cart.total_items ? cart.total_items : ''}/>
+      <Header totalItem={cart.total_items}/>
       <Products products={products} onAddToCart={handleAddToCart} />
+      <Cart cart={cart}/>
     </div>
   );
 }
