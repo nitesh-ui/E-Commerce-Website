@@ -93,6 +93,7 @@
 .header_sixth {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .header_sixth > i {

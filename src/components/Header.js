@@ -8,7 +8,7 @@ import "tippy.js/animations/scale.css";
 import MoreTooltip from './MoreTooltip';
 import LoginTooltip from './LoginTooltip';
 
-const Header = () => {
+const Header = ({totalItem}) => {
     return (
         <div className='header'>
             <div className='header_first'>
@@ -53,10 +53,7 @@ const Header = () => {
             </div>
             <div className='header_sixth'>
                 <i className="bi bi-cart-fill position-relative">
-                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">
-                        1
-                        <span className="visually-hidden">unread messages</span>
-                    </span>
+                    <span className="position-absolute top-0 start-100 translate-middle badge text-bg-danger">{totalItem}</span>
                 </i>
                 <p>Cart</p>
             </div>
