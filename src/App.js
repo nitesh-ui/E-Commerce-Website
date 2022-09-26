@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Products from "./components/Products";
 import Cart from './components/Cart';
 import { useEffect, useState } from 'react';
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
 const App = () => {
 
@@ -33,11 +34,16 @@ const App = () => {
   console.log(cart);
 
   return (
-    <div className="App">
-      <Header totalItem={cart.total_items}/>
-      <Products products={products} onAddToCart={handleAddToCart} />
-      <Cart cart={cart}/>
-    </div>
+    <>
+      <Router>
+        <Header totalItem={cart.total_items}/>
+        <Routes>
+          <Route exact path="/" element={<Products products={products} onAddToCart={handleAddToCart} />} />
+          <Route exact path="/products" element={<Products products={products} onAddToCart={handleAddToCart} />} />
+          <Route exact path="/cart" element={<Cart cart={cart}/>} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
