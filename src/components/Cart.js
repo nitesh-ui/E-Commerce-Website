@@ -44,7 +44,9 @@ const Cart = ({cart, onUpdateQty, onRemoveItem, onEmptyCart}) => {
                         <p><strong>Subtotal: </strong>{cart.subtotal && cart.subtotal.formatted_with_symbol}</p>
                         <div>
                             <button className="emptyButton btn btn-primary" onClick={onEmptyCart}>Empty Cart</button>
-                            <button className="checkoutButton btn btn-warning mx-2">Checkout</button>
+                            <Link to="/checkout">
+                                <button className="checkoutButton btn btn-warning mx-2">Checkout</button>
+                            </Link>
                         </div>
                     </div>
                 }
