@@ -12,7 +12,7 @@
     flex-direction: column;
 }
 
-.header_first > img {
+.header_first > a > img {
     width: 75px;
     object-fit: contain;
 }
@@ -62,11 +62,15 @@
     justify-content: center;
 }
 
-.header_fourth > p {
+.header_fourth p {
     color: white;
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 0;
+}
+
+.header_fourth > a {
+    text-decoration: none;
 }
 
 .header_fifth {
@@ -90,17 +94,19 @@
     padding: 5px 0px;
 }
 
-.header_sixth {
+.header_sixth,
+.header_sixth > a {
     display: flex;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.header_sixth > i {
+.header_sixth i {
     color: white;
 }
 
-.header_sixth > p {
+.header_sixth p {
     color: white;
     font-weight: 600;
     cursor: pointer;
