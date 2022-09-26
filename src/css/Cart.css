@@ -3,3 +3,31 @@
     max-height: 150px;
     object-fit: contain;
 }
+
+.cartTotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cartTotal > p {
+    margin-bottom: 0;
+}
+
+.cartAction {
+    display: flex;
+    align-items: center;
+}
+
+.cartAction .quantityButton button {
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.cartAction .product-quantity {
+    margin: 0 10px;
+}
