@@ -57,7 +57,7 @@ const App = () => {
           <Route exact path="/" element={<Products products={products} onAddToCart={handleAddToCart} />} />
           <Route exact path="/products" element={<Products products={products} onAddToCart={handleAddToCart} />} />
           <Route exact path="/cart" element={<Cart cart={cart} onUpdateQty={handleUpdateCartQty} onRemoveItem={handleRemoveFromCart} onEmptyCart={handleEmptyCart}/>} />
-          <Route exact path="/checkout" element={<Checkout/>} />
+          <Route exact path="/checkout" element={<Checkout cart={cart}/>} />
         </Routes>
       </Router>
     </>

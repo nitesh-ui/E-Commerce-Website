@@ -1,0 +1,26 @@
+.checkoutProduct {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.checkoutProduct > .item {
+    width: 25%;
+}
+
+.checkoutProduct > .productImage > img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.checkoutTotal {
+    display: flex;
+    align-items: center;
+}
+
+.checkoutTotal > p {
+    margin-bottom: 0;
+}
